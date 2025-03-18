@@ -1,11 +1,20 @@
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, CssBaseline, Box } from "@mui/material";
+
+import { getTheme } from "./style/mui/theme";
+import { GlobalStyleWrapper } from "./style/mui/globalStyle";
 
 export default function MyApp() {
+  const cusTheme = getTheme({});
+
   return (
     <React.Fragment>
-      <CssBaseline enableColorScheme />
-      {/* The rest of your application */}
+      <ThemeProvider theme={cusTheme}>
+        <CssBaseline enableColorScheme />
+        <GlobalStyleWrapper className={"gsw"}>
+          <Box className="gsw-main">{/* The rest of your application */}</Box>
+        </GlobalStyleWrapper>
+      </ThemeProvider>
     </React.Fragment>
   );
 }
