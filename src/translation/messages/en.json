@@ -1,3 +1,17 @@
 {
-    "test_translation": "Test Translation en"
+    "test_translation": "Test Translation en",
+    "name": "Name",
+    "email": "Email",
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "password": "Password",
+    "get_started": "Get Started",
+    "invalid_email": "Invalid email",
+    "privacy_policy": "Privacy Policy",
+    "confirm_password": "Confirm Password",
+    "do_not_have_an_account": "Don't have an account?",
+    "already_have_an_account": "Already have an account?",
+    "incorrect_email_or_password": "Incorrect email or password",
+    "by_signing_up_you_agree_to_our": "By signing up, you agree to our",
+    "": ""
 }

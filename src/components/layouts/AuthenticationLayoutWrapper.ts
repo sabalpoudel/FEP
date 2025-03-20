@@ -3,9 +3,9 @@ import { Theme } from "@mui/material";
 import styled from "@emotion/styled";
 
 export const AuthenticationLayoutWrapper = styled.div<{ theme?: Theme }>`
-  --max-form-width: 800px;
-  --max-form-height: 600px;
-  --max-form-side-width: 400px;
+  --max-form-width: 100%;
+  --max-form-height: 100%;
+  --max-form-side-width: 50%;
 
   max-width: var(--max-form-width);
 
