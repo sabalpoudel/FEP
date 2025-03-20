@@ -164,7 +164,6 @@ const SignInUpForm = (props: TSignInUpForm) => {
           )}
         />
       )}
-
       <Button
         fullWidth
         size="large"

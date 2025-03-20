@@ -56,6 +56,7 @@ export const AuthFormsWrapper = styled.div<{ theme?: Theme }>`
             }
           }
           &-button {
+            margin-top: 1rem;
             padding: 1rem;
             border-radius: 25px;
             color: ${({ theme }) => theme?.palette.common.white};
