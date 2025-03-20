@@ -1,13 +1,15 @@
 import React from "react";
-import { Button, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-
-import { AuthFormsWrapper } from "./AuthFormsWrapper";
 import { Link, useSearchParams } from "react-router-dom";
+
+import { Button, Typography } from "@mui/material";
+
+import { TAuthType } from "../../types";
+import { AuthFormsWrapper } from "./AuthFormsWrapper";
+import SignInUpForm from "./SignInUpForm";
 
 type TAuthForms = { className?: string };
 
-type TAuthType = "signin" | "signup";
 const AuthForms: React.FC<TAuthForms> = (props) => {
   const {} = props;
 
@@ -52,7 +54,9 @@ const AuthForms: React.FC<TAuthForms> = (props) => {
             </Button>
           </Typography>
         </div>
-        <div className="afw-wrapper-form"></div>
+        <div className="afw-wrapper-form">
+          <SignInUpForm type={type} />
+        </div>
         <div className="afw-wrapper-footer">
           <Typography
             variant="body2"

@@ -36,6 +36,31 @@ export const AuthFormsWrapper = styled.div<{ theme?: Theme }>`
       }
       &-form {
         flex: 1;
+        width: 65%;
+        margin: auto;
+        .siu-form {
+          gap: 2.5rem;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          flex-direction: column;
+          &-field {
+            label {
+              font-size: 1.2rem;
+            }
+            input {
+              font-size: 1.35rem;
+              font-weight: bold;
+            }
+          }
+          &-button {
+            padding: 1rem;
+            border-radius: 25px;
+            color: ${({ theme }) => theme?.palette.common.white};
+          }
+        }
       }
       &-footer {
         &-texts {
