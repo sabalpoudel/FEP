@@ -11,8 +11,6 @@ export const LoginPageWrapper = styled.div<{ theme?: Theme }>`
 
   & > div {
     height: 100%;
-    // border: 1px solid;
     width: var(--max-form-side-width);
-    // border-color: ${({ theme }) => theme?.palette.text.hint};
   }
 `;
