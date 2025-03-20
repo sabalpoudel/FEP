@@ -1,18 +1,18 @@
-// import { Link, Outlet } from "react-router-dom";
-
-import { changeLanguage } from "i18next";
-import { useTranslation } from "react-i18next";
+// import { changeLanguage } from "i18next";
+// import { useTranslation } from "react-i18next";
+import AuthForms from "./components/AuthForms";
+import AuthCarousel from "./components/AuthCarousel";
+import AuthenticationLayout from "../../components/layouts/AuthenticationLayout";
+import { LoginPageWrapper } from "./LoginPageWrapper";
 
 export default function LoginPage() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
-    <div>
-      <h1>This is Login page</h1>
-      <div>
-        <h1>{t("test_translation")}</h1>
-        <span onClick={() => changeLanguage("en")}>en</span>&emsp;
-        <span onClick={() => changeLanguage("ar")}>ar</span>
-      </div>
-    </div>
+    <AuthenticationLayout className="alw">
+      <LoginPageWrapper className="lpw">
+        <AuthForms />
+        <AuthCarousel />
+      </LoginPageWrapper>
+    </AuthenticationLayout>
   );
 }

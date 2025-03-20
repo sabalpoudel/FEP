@@ -1,12 +1,18 @@
 import styled from "@emotion/styled";
+import { MAX_WIDTH } from "./constant";
 
 const GlobalStyleWrapper = styled.div`
+  margin: auto;
   width: 100vw;
   height: 100vh;
+  --max-screen-width: ${MAX_WIDTH};
+  max-width: var(--max-screen-width);
+
   .gsw {
     &-main {
       width: 100%;
       height: 100%;
+      margin: auto;
     }
   }
   .my-toast[data-sonner-toast] button[data-close-button] {

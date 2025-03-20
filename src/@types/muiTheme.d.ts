@@ -16,6 +16,7 @@ declare module "@mui/material/styles/createPalette" {
     gradient?: string; // Custom color property
   }
   interface TypeText {
+    hint?: string; // Custom color property
     text2?: string; // Custom color property
   }
 
