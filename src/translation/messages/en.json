@@ -13,5 +13,15 @@
     "already_have_an_account": "Already have an account?",
     "incorrect_email_or_password": "Incorrect email or password",
     "by_signing_up_you_agree_to_our": "By signing up, you agree to our",
-    "": ""
+    "HookForm": {
+        "required": "Required",
+        "invalid_url": "URL is invalid",
+        "invalid_value": "Invalid value",
+        "invalid_phone": "Phone is invalid",
+        "invalid_email": "Email is invalid",
+        "invalid_number": "Number is invalid",
+        "password_mismatch": "Password mismatch",
+        "weak_password": "Password needs: 1 lowercase, 1 uppercase, 1 number, minimum 8 characters.",
+        "": ""
+    }
 }
