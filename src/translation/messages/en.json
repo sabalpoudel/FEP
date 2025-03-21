@@ -17,6 +17,12 @@
     "Banner": {
         "celebrate_earth_day_with_us": "Celebrate Earth day with us."
     },
+    "home": "Home",
+    "games": "Games",
+    "explore": "Explore",
+    "courses": "Courses",
+    "materials": "Materials",
+    "search": "Search",
     "HookForm": {
         "required": "Required",
         "invalid_url": "URL is invalid",

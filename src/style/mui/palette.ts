@@ -7,7 +7,7 @@ const lightPalette = {
     white: "#fff",
   },
   background: {
-    paper: "#fff",
+    paper: "#E8EBEF",
     light: "#FFF7DD",
     default: "#FAFAFA",
     // default: "#FDF1B8",

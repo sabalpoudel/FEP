@@ -1,13 +1,5 @@
-// import { Link, Outlet } from "react-router-dom";
+import MainLayout from "../../components/layouts/MainLayout";
 
 export default function DashboardPage() {
-  return (
-    <div>
-      This is Dashboard page
-      {/* <nav>
-        <Link to="/login">Login</Link> | <Link to="/dashboard">Dashboard</Link>
-      </nav>
-      <Outlet /> Child routes render here */}
-    </div>
-  );
+  return <MainLayout>DashboardPage</MainLayout>;
 }

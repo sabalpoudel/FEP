@@ -8,6 +8,9 @@ const GlobalStyleWrapper = styled.div`
   --max-screen-width: ${MAX_WIDTH};
   max-width: var(--max-screen-width);
 
+  a {
+    text-decoration: none;
+  }
   .gsw {
     &-main {
       width: 100%;
