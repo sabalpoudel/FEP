@@ -1,9 +1,10 @@
 import React from "react";
 import { ThemeProvider, CssBaseline, Box } from "@mui/material";
 
+import { MainRoutes } from "./MainRoutes";
 import { getTheme } from "./style/mui/theme";
 import { GlobalStyleWrapper } from "./style/mui/globalStyle";
-import { MainRoutes } from "./MainRoutes";
+import "./style/globals.css";
 
 export default function MyApp() {
   const cusTheme = getTheme({});

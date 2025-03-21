@@ -6,7 +6,6 @@ const GlobalStyleWrapper = styled.div`
   width: 100vw;
   height: 100vh;
   --max-screen-width: ${MAX_WIDTH};
-  max-width: var(--max-screen-width);
 
   a {
     text-decoration: none;
