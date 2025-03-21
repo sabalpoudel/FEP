@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import XIcon from "@mui/icons-material/X";
@@ -62,7 +62,7 @@ const Header1 = [
 ];
 const Header2 = [
   {
-    href: "/home",
+    href: "/dashboard",
     label: "home",
   },
   {
@@ -80,6 +80,8 @@ const Header2 = [
 ];
 const Header: React.FC<THeader> = ({}) => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+
   return (
     <HeaderWrapper className="hw">
       <div className="hw-wrapper">
@@ -157,14 +159,15 @@ const Header: React.FC<THeader> = ({}) => {
             <div className="hw-2-content-right">
               <div className="hw-2-content-right-menu">
                 {Header2.map((item) => {
+                  const isActive = pathname === item.href ? "active" : "";
                   return (
                     <Typography
-                      to={item.href}
                       color="black"
+                      to={item.href}
                       key={item.label}
                       component={Link}
                       fontWeight={600}
-                      className="hw-2-content-right-logo"
+                      className={`hw-2-content-right-menu-item hw-2-content-right-menu-item-${isActive}`}
                     >
                       {t(item?.label || "")}
                     </Typography>

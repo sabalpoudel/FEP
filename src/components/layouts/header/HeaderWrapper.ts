@@ -1,6 +1,7 @@
 "use client";
 import { Theme } from "@mui/material";
 import styled from "@emotion/styled";
+import { AfterUnderlineStyle } from "../../../style/mui/utilsStyle";
 
 const HeaderWrapper = styled.div<{ theme?: Theme }>`
   top: 0;
@@ -66,6 +67,15 @@ const HeaderWrapper = styled.div<{ theme?: Theme }>`
           }
           &-label {
             padding-left: 0.5rem;
+            position: relative;
+            transition: all 0.3s ease-in;
+            ${({ theme }) =>
+              AfterUnderlineStyle({
+                left: "10%",
+                height: "3px",
+                bottom: "-0.2rem",
+                bgColor: theme.palette.primary.main,
+              })};
           }
           &-line {
             height: 50px;
@@ -84,6 +94,24 @@ const HeaderWrapper = styled.div<{ theme?: Theme }>`
             gap: 1.5rem;
             display: flex;
             align-items: center;
+            &-item {
+              position: relative;
+              transition: all 0.3s ease-in;
+              ${({ theme }) =>
+                AfterUnderlineStyle({
+                  left: "10%",
+                  height: "3px",
+                  bottom: "-0.2rem",
+                  bgColor: theme.palette.primary.main,
+                })};
+              &-active {
+                &::after {
+                  left: 2%;
+                  width: 115%;
+                  height: 3px;
+                }
+              }
+            }
           }
           &-end {
             gap: 1rem;
