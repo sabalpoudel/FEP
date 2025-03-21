@@ -84,7 +84,7 @@ const Header: React.FC<THeader> = ({}) => {
 
   return (
     <HeaderWrapper className="hw">
-      <div className="hw-wrapper">
+      <header className="hw-wrapper">
         <div className="hw-1">
           <div className="hw-size hw-1-content">
             <div className="hw-1-content-contact">
@@ -199,7 +199,7 @@ const Header: React.FC<THeader> = ({}) => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </HeaderWrapper>
   );
 };

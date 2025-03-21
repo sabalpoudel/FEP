@@ -8,5 +8,16 @@ export const MainLayoutWrapper = styled.div<{ theme?: Theme }>`
   --header-height: calc(var(--header-1-height) + var(--header-2-height));
 
   width: 100%;
-  height: 100%;
+  padding-top: var(--header-height);
+
+  .mlw {
+    &-main {
+      width: 100%;
+      margin: auto;
+      padding: 1rem;
+      overflow: hidden;
+      min-height: 188px;
+      max-width: var(--max-screen-width);
+    }
+  }
 `;
