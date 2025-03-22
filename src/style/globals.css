@@ -1,3 +1,7 @@
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --primary-light: #FFECB3;
+}
 *{
   margin:0;
   padding:0; 
