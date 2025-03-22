@@ -1,17 +1,18 @@
-import { Theme } from "@mui/material";
 import styled from "@emotion/styled";
+import { Theme } from "@mui/material";
+
 import { AfterUnderlineStyle } from "../../../style/mui/utilsStyle";
 
 export const CourseHeaderWrapper = styled.div<{ theme?: Theme }>`
   width: 100%;
   height: var(--header-3-height);
-  background-color: ${({ theme }) => theme?.palette.background.paper};
+  background-color: ${({ theme }) => theme?.palette.background.paper2};
 
   position: absolute;
   top: calc(var(--header-height) - var(--header-3-height));
 
-  border-top: 1px solid darkgrey;
-  border-bottom: 1px solid darkgrey;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 
   .chw {
     &-wrapper {

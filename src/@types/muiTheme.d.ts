@@ -12,6 +12,7 @@ declare module "@mui/material/styles/createPalette" {
   }
   // Extend the TypeBackground interface to include the `light` property
   interface TypeBackground {
+    paper2?: string; // Custom color property
     light?: string; // Custom color property
     gradient?: string; // Custom color property
   }

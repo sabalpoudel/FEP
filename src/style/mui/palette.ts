@@ -8,6 +8,7 @@ const lightPalette = {
   },
   background: {
     paper: "#E8EBEF",
+    paper2: "#F0F4F9",
     light: "#FFF7DD",
     default: "#FAFAFA",
     // default: "#FDF1B8",
