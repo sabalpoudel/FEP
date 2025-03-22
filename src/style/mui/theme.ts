@@ -1,4 +1,3 @@
-"use client";
 import { arEG, enUS } from "@mui/material/locale";
 import { createTheme, Direction } from "@mui/material/styles";
 

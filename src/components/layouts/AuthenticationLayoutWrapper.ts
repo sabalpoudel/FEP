@@ -1,4 +1,3 @@
-"use client";
 import { Theme } from "@mui/material";
 import styled from "@emotion/styled";
 import { breakpoint } from "../../style/mui/theme";
