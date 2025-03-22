@@ -52,6 +52,13 @@
     "comments": "Comments",
     "resources": "Resources",
     "course_summary": "Course Summary",
+    "last_updated": "Last Updated",
+    "skill_level": "Skill Level",
+    "students_enrolled": "Students Enrolled",
+    "language": "Language",
+    "videos": "Videos",
+    "time": "Time",
+    "description": "Description",
     "HookForm": {
         "required": "Required",
         "invalid_url": "URL is invalid",

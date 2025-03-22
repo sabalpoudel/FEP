@@ -102,6 +102,45 @@ export const CourseBodyWrapper = styled.div<{ theme?: Theme }>`
           }
         }
       }
+      .cs-to {
+        gap: 1rem;
+        display: flex;
+        padding: 3rem 0;
+        flex-direction: column;
+        &-flex {
+          gap: 0.3rem;
+          display: flex;
+          align-items: center;
+        }
+        &-language {
+          padding-bottom: 2rem;
+        }
+        &-detail {
+          padding-bottom: 6rem;
+          border-top: 1px solid lightgrey;
+          border-bottom: 1px solid lightgrey;
+
+          display: flex;
+          &-left {
+            flex: 1;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            border-right: 1px solid lightgrey;
+          }
+          &-right {
+            flex: 3;
+            padding-top: 3rem;
+            padding-left: 2rem;
+          }
+        }
+
+        &-description {
+          gap: 3rem;
+          display: flex;
+          max-width: 800px;
+          padding-top: 2rem;
+        }
+      }
     }
   }
 `;
