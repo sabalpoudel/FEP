@@ -6,4 +6,16 @@ type TContentTabData = {
   image: string;
   videoUrl: string;
 };
-export type { TCourseTab, TContentTabData };
+
+type TComment = {
+  likes: number;
+  rating: number;
+  replies: TComment[];
+  time_ago: string;
+  user: {
+    name: string;
+    profile_picture: string;
+  };
+  review_text: string;
+};
+export type { TCourseTab, TContentTabData, TComment };

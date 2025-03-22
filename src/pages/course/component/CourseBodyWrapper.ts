@@ -148,6 +148,113 @@ export const CourseBodyWrapper = styled.div<{ theme?: Theme }>`
         padding: 3rem 0;
         flex-direction: column;
       }
+
+      .cc-tc {
+        gap: 6rem;
+        display: flex;
+        padding: 3rem 0;
+        flex-direction: column;
+
+        &-comments {
+          gap: 2rem;
+          display: flex;
+          flex-direction: column;
+
+          &-item {
+            padding: 1rem;
+            border-radius: 25px;
+            box-shadow: 0px 0px 3px 0px #d1c4c4;
+            background-color: ${({ theme }) => theme?.palette.background.paper};
+
+            gap: 1rem;
+            display: flex;
+            &-detail {
+              flex: 1;
+              &-name {
+                gap: 1rem;
+                display: flex;
+                align-items: center;
+              }
+              &-stars {
+              }
+              &-reply {
+                padding: 1rem 0;
+              }
+              &-actions {
+                gap: 2rem;
+                display: flex;
+                align-items: center;
+                padding-bottom: 1rem;
+                &-like {
+                  gap: 0.5rem;
+                  display: flex;
+                  align-items: center;
+                }
+                &-reply {
+                  gap: 0.2rem;
+                  display: flex;
+                  align-items: center;
+                }
+              }
+              &-replies {
+                gap: 4rem;
+                display: flex;
+                align-items: center;
+                &-input {
+                  flex: 1;
+                  &-field {
+                    border: none;
+                    padding: 0.5rem;
+                    border-radius: 16px;
+                    box-shadow: 0px 0px 3px 0px #d1c4c4;
+                    background: ${({ theme }) => theme?.palette.common.white};
+                    &:after {
+                      border: transparent;
+                    }
+                    &:before {
+                      border: transparent;
+                    }
+                    textarea {
+                      padding: 0 1rem;
+                    }
+                    .MuiInputAdornment-root {
+                      padding: 0 0.4rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &-reply {
+          position: relative;
+          &-input {
+            border: none;
+            padding: 0.5rem;
+            border-radius: 16px;
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.2);
+            background-color: ${({ theme }) => theme?.palette.background.paper};
+            &:after {
+              border: transparent;
+            }
+            &:before {
+              border: transparent;
+            }
+            textarea {
+              padding: 0 1rem;
+            }
+            .MuiInputAdornment-root {
+              padding: 0 0.4rem;
+            }
+          }
+          &-btn {
+            right: 1rem;
+            bottom: 1rem;
+            min-width: 100px;
+            position: absolute;
+          }
+        }
+      }
     }
   }
 `;

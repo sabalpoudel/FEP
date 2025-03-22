@@ -1,4 +1,4 @@
-import { TContentTabData, TCourseTab } from "./types";
+import { TComment, TContentTabData, TCourseTab } from "./types";
 
 const CourseTab: TCourseTab[] = [
   "content",
@@ -62,4 +62,15 @@ const OverviewTabContent = {
     "This video course is a Quick Start to learning how to build projects with Arduino. As you go through this video course, you will learn how to use tools like:\n- The Arduino IDE to write and upload code to your Arduino board,\n- Serial Monitor for debugging and communication with your Arduino,\n- Various electronic components like LEDs, sensors, and motors to bring your projects to life.\n- You will also learn how to Download and Install the Arduino IDE if you don’t have it already.\nAlthough this video course is short and simple, it is also very practical!",
 };
 
-export { CourseTab, ContentTabData, OverviewTabContent };
+const Comment: TComment = {
+  likes: 0,
+  rating: 4,
+  replies: [],
+  time_ago: "9 months ago",
+  user: { name: "Majed al Siyabi", profile_picture: "/user.png" },
+  review_text:
+    "Discover all our free tools to select a winner for a contest, giveaway, competition, or promotion on Instagram, Facebook, YouTube, TikTok, Threads, Bluesky, X (Twitter), and Reddit, or to draw random names.",
+};
+const CommentTabContent: TComment[] = [Comment, Comment, Comment];
+
+export { CourseTab, ContentTabData, OverviewTabContent, CommentTabContent };
