@@ -20,8 +20,8 @@ export const DashboardPageWrapper = styled.div<{ theme?: Theme }>`
         &-li {
           gap: 2rem;
           display: flex;
-          padding-bottom: 1rem;
-          border-bottom: 1px solid lightgray;
+          padding-bottom: 2rem;
+          border-bottom: 1px solid lightgrey;
           &-img {
             width: 240px;
             height: 150px;
@@ -48,6 +48,33 @@ export const DashboardPageWrapper = styled.div<{ theme?: Theme }>`
             &-btn {
               padding: 0;
               width: 100px;
+            }
+          }
+        }
+      }
+      .sic-ul {
+        gap: 2rem;
+        display: flex;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        border-bottom: 1px solid lightgrey;
+
+        &-li {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          &-img {
+            width: 240px;
+            height: 150px;
+            overflow: hidden;
+            font-size: 0.65rem;
+            border-radius: 16px;
+            background: ${({ theme }) => theme?.palette.background.paper};
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
         }

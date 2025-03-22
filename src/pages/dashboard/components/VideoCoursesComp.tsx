@@ -1,7 +1,7 @@
+import { Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import ButtonComp from "../../../components/bits/Button";
-import { Typography } from "@mui/material";
 
 const Data = [
   {

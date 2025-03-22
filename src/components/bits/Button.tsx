@@ -8,19 +8,20 @@ import { Spinner } from "./Spinner";
 
 type TButton = ButtonProps & {
   isLoading?: boolean;
+  noGradient?: boolean;
 };
 
 const ButtonComp: React.FC<TButton> = ({
-  isLoading = false,
-  disabled,
-  children,
   sx = {},
+  children,
+  disabled,
+  noGradient = false,
+  isLoading = false,
   ...props
 }) => {
-  const isDisabled = disabled || isLoading;
   const theme = useTheme() as Theme;
+  const isDisabled = disabled || isLoading;
 
-  console.log({ theme });
   return (
     <Button
       disableElevation
@@ -29,8 +30,8 @@ const ButtonComp: React.FC<TButton> = ({
       {...props}
       sx={{
         position: "relative",
-        color: theme.palette.common.white,
-        background: theme.palette.background.gradient,
+        color: noGradient ? undefined : theme.palette.common.white,
+        background: noGradient ? undefined : theme.palette.background.gradient,
         ...sx,
       }}
     >

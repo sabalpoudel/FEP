@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import ButtonComp from "../../components/bits/Button";
 import MainLayout from "../../components/layouts/MainLayout";
 import { DashboardPageWrapper } from "./DashboardPageWrapper";
-import VideoCoursesComp from "./componenets/VideoCoursesComp";
+import VideoCoursesComp from "./components/VideoCoursesComp";
+import SalesItemComp from "./components/SalesItemComp";
 
 export default function DashboardPage() {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ export default function DashboardPage() {
         </div>
         <div className="dpw-main">
           <VideoCoursesComp />
+          <SalesItemComp />
         </div>
       </DashboardPageWrapper>
     </MainLayout>
