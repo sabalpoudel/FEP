@@ -1,9 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vite.dev/config/
-export default defineConfig({
-  base: "/FEP/",
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
   esbuild: { target: "esnext" },
-});
+  base: mode === "production" ? "/FEP/" : "/",
+}));

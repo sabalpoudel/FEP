@@ -6,11 +6,11 @@
   "homepage": "https://github.com/sabalpoudel/FEP/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist --repo https://github.com/sabalpoudel/FEP.git"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
