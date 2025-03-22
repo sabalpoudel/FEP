@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   base: "/FEP/",
   plugins: [react()],
+  esbuild: { target: "esnext" },
 });

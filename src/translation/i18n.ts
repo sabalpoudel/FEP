@@ -1,12 +1,21 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
+// async function loadResources() {
+//   return {
+//     en: { translation: (await import("./messages/en.json")).default },
+//     ar: { translation: (await import("./messages/ar.json")).default },
+//   };
+// }
+
+// const resources = await loadResources();
+
 const resources = {
   en: {
-    translation: (await import("./messages/en.json")).default,
+    translation: () => import("./messages/en.json").then((m) => m.default),
   },
   ar: {
-    translation: (await import("./messages/ar.json")).default,
+    translation: () => import("./messages/ar.json").then((m) => m.default),
   },
 };
 
