@@ -51,6 +51,7 @@
     "overview": "Overview",
     "comments": "Comments",
     "resources": "Resources",
+    "course_summary": "Course Summary",
     "HookForm": {
         "required": "Required",
         "invalid_url": "URL is invalid",

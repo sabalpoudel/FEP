@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { TCourseTab } from "../types";
 import { CourseTab } from "../constant";
 import CourseContentTab from "./CourseContentTab";
+import CourseContentTabContent from "./CourseContentTabContent";
 
 type TCourseContent = {};
 
@@ -20,6 +21,7 @@ export default function CourseContent(props: TCourseContent) {
   return (
     <div className="cc">
       <CourseContentTab toggleTab={toggleTab} activeTab={activeTab} />
+      {activeTab === "content" && <CourseContentTabContent />}
     </div>
   );
 }
