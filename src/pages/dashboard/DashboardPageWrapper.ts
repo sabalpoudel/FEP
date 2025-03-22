@@ -79,6 +79,22 @@ export const DashboardPageWrapper = styled.div<{ theme?: Theme }>`
           }
         }
       }
+      .lic-ul {
+        gap: 2rem;
+        display: flex;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        padding: 3rem 0;
+        &-li {
+          gap: 1rem;
+          display: flex;
+          flex-direction: column;
+          &-skeleton {
+            border-radius: 16px;
+            background: ${({ theme }) => theme?.palette.background.paper};
+          }
+        }
+      }
     }
   }
 `;
