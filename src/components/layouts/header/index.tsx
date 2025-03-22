@@ -124,7 +124,7 @@ const Header: React.FC<THeader> = ({}) => {
         <div className="hw-2">
           <div className="hw-size hw-2-content">
             <div className="hw-2-content-left">
-              {Header1.map((item) => {
+              {Header1.map((item, j) => {
                 if (item.src)
                   return (
                     <a
@@ -153,7 +153,13 @@ const Header: React.FC<THeader> = ({}) => {
                       {t(item?.label || "")}
                     </Typography>
                   );
-                else return <div className="hw-2-content-left-line" />;
+                else
+                  return (
+                    <div
+                      key={item.label + `-${j}`}
+                      className="hw-2-content-left-line"
+                    />
+                  );
               })}
             </div>
             <div className="hw-2-content-right">

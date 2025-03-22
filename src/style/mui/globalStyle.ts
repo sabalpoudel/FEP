@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { MAX_WIDTH } from "./constant";
+import { CScrollbarStyle } from "./utilsStyle";
 
 const GlobalStyleWrapper = styled.div`
   margin: auto;
@@ -44,5 +45,7 @@ const GlobalStyleWrapper = styled.div`
     --error-border: var(--error-medium);
     --error-text: #ffffff; /* Color code for error text */
   }
+  overflow: auto;
+  ${CScrollbarStyle}
 `;
 export { GlobalStyleWrapper };

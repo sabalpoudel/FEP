@@ -16,7 +16,7 @@ export const MainLayoutWrapper = styled.div<{ theme?: Theme }>`
       margin: auto;
       padding: 1rem;
       overflow: hidden;
-      min-height: 188px;
+      min-height: 50vh;
       max-width: var(--max-screen-width);
     }
   }

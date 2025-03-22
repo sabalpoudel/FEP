@@ -4,13 +4,13 @@ const CScrollbarStyle = `
     height: 3px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
+    background-color: #FDF1B8;
   }
   &::-webkit-scrollbar-track {
-    background-color: lightgrey;
+    background-color: #FDE992;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background-color: var(--primary-light);
+    background-color: #F9A825;
   }
   &::-webkit-scrollbar-button {
     width: 0;

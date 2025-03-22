@@ -1,22 +1,11 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
-// async function loadResources() {
-//   return {
-//     en: { translation: (await import("./messages/en.json")).default },
-//     ar: { translation: (await import("./messages/ar.json")).default },
-//   };
-// }
-
-// const resources = await loadResources();
+import enTranslation from "./messages/en.json";
+import arTranslation from "./messages/ar.json";
 
 const resources = {
-  en: {
-    translation: () => import("./messages/en.json").then((m) => m.default),
-  },
-  ar: {
-    translation: () => import("./messages/ar.json").then((m) => m.default),
-  },
+  en: { translation: enTranslation },
+  ar: { translation: arTranslation },
 };
 
 i18n
@@ -25,9 +14,9 @@ i18n
     resources,
     lng: "en",
     fallbackLng: "en",
-    interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+    debug: import.meta.env.DEV,
+    react: { useSuspense: false },
+    interpolation: { escapeValue: false },
   });
 
 export default i18n;
