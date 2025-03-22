@@ -141,6 +141,13 @@ export const CourseBodyWrapper = styled.div<{ theme?: Theme }>`
           padding-top: 2rem;
         }
       }
+
+      .cc-tr {
+        gap: 1rem;
+        display: flex;
+        padding: 3rem 0;
+        flex-direction: column;
+      }
     }
   }
 `;

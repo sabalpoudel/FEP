@@ -5,6 +5,7 @@ import { CourseTab } from "../constant";
 import CourseContentTab from "./CourseContentTab";
 import CourseContentTabContent from "./CourseContentTabContent";
 import CourseContentTabOverview from "./CourseContentTabOverview";
+import CourseContentTabResources from "./CourseContentTabResources";
 
 type TCourseContent = {};
 
@@ -24,6 +25,7 @@ export default function CourseContent(props: TCourseContent) {
       <CourseContentTab toggleTab={toggleTab} activeTab={activeTab} />
       {activeTab === "content" && <CourseContentTabContent />}
       {activeTab === "overview" && <CourseContentTabOverview />}
+      {activeTab === "resources" && <CourseContentTabResources />}
     </div>
   );
 }
