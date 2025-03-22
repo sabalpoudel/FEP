@@ -6,6 +6,8 @@ import DoneIcon from "@mui/icons-material/Done";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 import { ContentTabData } from "../constant";
+import { Link } from "react-router-dom";
+import CustomVideoPlayer from "../../../components/bits/files/CustomVideo";
 
 export default function CourseContentTabContent() {
   const { t } = useTranslation();
@@ -14,7 +16,7 @@ export default function CourseContentTabContent() {
       {ContentTabData.map(
         ({ title, duration, description, videoUrl }, index) => {
           return (
-            <li key={title + index} className="cc-tc-ul-li">
+            <li id={title} key={title + index} className="cc-tc-ul-li">
               <div className="cc-tc-ul-li-vid">
                 <div className="cc-tc-ul-li-vid-title">
                   <Typography variant="h4" fontWeight="bold">
@@ -30,7 +32,8 @@ export default function CourseContentTabContent() {
                   </Typography>
                 </div>
                 <Typography variant="h6">{description}</Typography>
-                <video
+
+                <CustomVideoPlayer
                   title={title}
                   src={videoUrl}
                   className="cc-tc-ul-li-vid-video"
@@ -48,17 +51,21 @@ export default function CourseContentTabContent() {
                   <ul className="cc-tc-ul-li-progress-ul">
                     {ContentTabData.map(({ title }, index) => {
                       return (
-                        <li
-                          key={title + index}
-                          className="cc-tc-ul-li-progress-ul-li"
-                        >
-                          <Avatar className="cc-tc-ul-li-progress-ul-li-avatar">
-                            U{index + 1}
-                          </Avatar>
-                          <Typography className="cc-tc-ul-li-progress-ul-li-title">
-                            {title}
+                        <li key={title + index}>
+                          <Typography
+                            color="black"
+                            to={`#${title}`}
+                            component={Link}
+                            className="cc-tc-ul-li-progress-ul-a"
+                          >
+                            <Avatar className="cc-tc-ul-li-progress-ul-a-avatar">
+                              U{index + 1}
+                            </Avatar>
+                            <Typography className="cc-tc-ul-li-progress-ul-a-title">
+                              {title}
+                            </Typography>
+                            <DoneIcon color="primary" />
                           </Typography>
-                          <DoneIcon />
                         </li>
                       );
                     })}

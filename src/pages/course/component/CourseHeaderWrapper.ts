@@ -8,6 +8,7 @@ export const CourseHeaderWrapper = styled.div<{ theme?: Theme }>`
   height: var(--header-3-height);
   background-color: ${({ theme }) => theme?.palette.background.paper2};
 
+  z-index: 2;
   position: absolute;
   top: calc(var(--header-height) - var(--header-3-height));
 

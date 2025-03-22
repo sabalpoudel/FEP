@@ -66,6 +66,7 @@ export const CourseBodyWrapper = styled.div<{ theme?: Theme }>`
               width: 100%;
               margin: 2rem 0;
               max-width: 700px;
+              overflow: hidden;
               border-radius: 16px;
               background-color: ${({ theme }) =>
                 theme?.palette.background.paper};
@@ -84,7 +85,7 @@ export const CourseBodyWrapper = styled.div<{ theme?: Theme }>`
               gap: 1rem;
               display: flex;
               flex-direction: column;
-              &-li {
+              &-a {
                 gap: 1rem;
                 display: flex;
                 align-items: center;

@@ -13,15 +13,15 @@ const ContentTabData: TContentTabData[] = [
     duration: "3 minutes, 33 seconds",
     description:
       "Before moving into the basic principles of arduino design, I would like to introduce myself and about the course",
-    image: "/path-to-image/introduction.jpg",
-    videoUrl: "/videos/introduction.mp4",
+    image: "/introduction.jpg",
+    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
   },
   {
     title: "Arduino Pack",
     duration: "3 minutes, 33 seconds",
     description:
       "Before moving into the basic principles of arduino design, I would like to introduce myself and about the course",
-    image: "/path-to-image/arduino-pack.jpg",
+    image: "/arduino-pack.jpg",
     videoUrl: "/videos/arduino-pack.mp4",
   },
   {
@@ -29,7 +29,7 @@ const ContentTabData: TContentTabData[] = [
     duration: "3 minutes, 33 seconds",
     description:
       "Before moving into the basic principles of arduino design, I would like to introduce myself and about the course",
-    image: "/path-to-image/resistance.jpg",
+    image: "/resistance.jpg",
     videoUrl: "/videos/resistance.mp4",
   },
   {
@@ -37,15 +37,15 @@ const ContentTabData: TContentTabData[] = [
     duration: "3 minutes, 33 seconds",
     description:
       "Before moving into the basic principles of arduino design, I would like to introduce myself and about the course",
-    image: "/path-to-image/resistance.jpg",
-    videoUrl: "/videos/resistance.mp4",
+    image: "/resistance.jpg",
+    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
   },
   {
     title: "Final Project",
     duration: "3 minutes, 33 seconds",
     description:
       "Before moving into the basic principles of arduino design, I would like to introduce myself and about the course",
-    image: "/path-to-image/resistance.jpg",
+    image: "/resistance.jpg",
     videoUrl: "/videos/resistance.mp4",
   },
 ];
