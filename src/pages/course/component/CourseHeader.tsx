@@ -18,7 +18,7 @@ export default function CourseHeader() {
             <Typography to={"/"} component={Link} color="textPrimary">
               <img
                 alt="course-logo"
-                src="/public/assets/images/logo/course-logo.png"
+                src="/assets/images/logo/course-logo.png"
               />
             </Typography>
           </li>

@@ -47,6 +47,10 @@
     "courses": "Courses",
     "materials": "Materials",
     "search": "Search",
+    "content": "Content",
+    "overview": "Overview",
+    "comments": "Comments",
+    "resources": "Resources",
     "HookForm": {
         "required": "Required",
         "invalid_url": "URL is invalid",
