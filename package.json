@@ -3,14 +3,14 @@
   "private": true,
   "type": "module",
   "version": "0.0.0",
-  "homepage": "https://github.com/sabalpoudel/FEP/",
+  "homepage": "https://sabalpoudel.github.io/FEP/",
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "build": "tsc -b && vite build",
-    "deploy": "gh-pages -d dist --repo https://github.com/sabalpoudel/FEP.git"
+    "deploy": "gh-pages -d dist -r https://github.com/sabalpoudel/FEP.git"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
